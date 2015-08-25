@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7A0FEFB1B8BFFDD00D796A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */; };
+		C7A0FEFD1B8BFFDD00D796A5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C7A0FEFC1B8BFFDD00D796A5 /* GameScene.sks */; };
+		C7A0FEFF1B8BFFDD00D796A5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */; };
+		C7A0FF011B8BFFDD00D796A5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */; };
+		C7A0FF041B8BFFDD00D796A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A0FF021B8BFFDD00D796A5 /* Main.storyboard */; };
+		C7A0FF061B8BFFDD00D796A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A0FF051B8BFFDD00D796A5 /* Images.xcassets */; };
+		C7A0FF091B8BFFDD00D796A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A0FF071B8BFFDD00D796A5 /* LaunchScreen.xib */; };
+		C7A0FF151B8BFFDD00D796A5 /* Rainbow_Cat_FlyerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FF141B8BFFDD00D796A5 /* Rainbow_Cat_FlyerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7A0FF0F1B8BFFDD00D796A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7A0FEED1B8BFFDC00D796A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7A0FEF41B8BFFDC00D796A5;
+			remoteInfo = "Rainbow Cat Flyer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7A0FEF51B8BFFDD00D796A5 /* Rainbow Cat Flyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rainbow Cat Flyer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A0FEF91B8BFFDD00D796A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7A0FEFC1B8BFFDD00D796A5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C7A0FF031B8BFFDD00D796A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7A0FF051B8BFFDD00D796A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C7A0FF081B8BFFDD00D796A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C7A0FF0E1B8BFFDD00D796A5 /* Rainbow Cat FlyerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rainbow Cat FlyerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A0FF131B8BFFDD00D796A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7A0FF141B8BFFDD00D796A5 /* Rainbow_Cat_FlyerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rainbow_Cat_FlyerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7A0FEF21B8BFFDC00D796A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A0FF0B1B8BFFDD00D796A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7A0FEEC1B8BFFDC00D796A5 = {
+			isa = PBXGroup;
+			children = (
+				C7A0FEF71B8BFFDD00D796A5 /* Rainbow Cat Flyer */,
+				C7A0FF111B8BFFDD00D796A5 /* Rainbow Cat FlyerTests */,
+				C7A0FEF61B8BFFDD00D796A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7A0FEF61B8BFFDD00D796A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7A0FEF51B8BFFDD00D796A5 /* Rainbow Cat Flyer.app */,
+				C7A0FF0E1B8BFFDD00D796A5 /* Rainbow Cat FlyerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7A0FEF71B8BFFDD00D796A5 /* Rainbow Cat Flyer */ = {
+			isa = PBXGroup;
+			children = (
+				C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */,
+				C7A0FEFC1B8BFFDD00D796A5 /* GameScene.sks */,
+				C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */,
+				C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */,
+				C7A0FF021B8BFFDD00D796A5 /* Main.storyboard */,
+				C7A0FF051B8BFFDD00D796A5 /* Images.xcassets */,
+				C7A0FF071B8BFFDD00D796A5 /* LaunchScreen.xib */,
+				C7A0FEF81B8BFFDD00D796A5 /* Supporting Files */,
+			);
+			path = "Rainbow Cat Flyer";
+			sourceTree = "<group>";
+		};
+		C7A0FEF81B8BFFDD00D796A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7A0FEF91B8BFFDD00D796A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7A0FF111B8BFFDD00D796A5 /* Rainbow Cat FlyerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7A0FF141B8BFFDD00D796A5 /* Rainbow_Cat_FlyerTests.swift */,
+				C7A0FF121B8BFFDD00D796A5 /* Supporting Files */,
+			);
+			path = "Rainbow Cat FlyerTests";
+			sourceTree = "<group>";
+		};
+		C7A0FF121B8BFFDD00D796A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7A0FF131B8BFFDD00D796A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7A0FEF41B8BFFDC00D796A5 /* Rainbow Cat Flyer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A0FF181B8BFFDD00D796A5 /* Build configuration list for PBXNativeTarget "Rainbow Cat Flyer" */;
+			buildPhases = (
+				C7A0FEF11B8BFFDC00D796A5 /* Sources */,
+				C7A0FEF21B8BFFDC00D796A5 /* Frameworks */,
+				C7A0FEF31B8BFFDC00D796A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rainbow Cat Flyer";
+			productName = "Rainbow Cat Flyer";
+			productReference = C7A0FEF51B8BFFDD00D796A5 /* Rainbow Cat Flyer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7A0FF0D1B8BFFDD00D796A5 /* Rainbow Cat FlyerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A0FF1B1B8BFFDD00D796A5 /* Build configuration list for PBXNativeTarget "Rainbow Cat FlyerTests" */;
+			buildPhases = (
+				C7A0FF0A1B8BFFDD00D796A5 /* Sources */,
+				C7A0FF0B1B8BFFDD00D796A5 /* Frameworks */,
+				C7A0FF0C1B8BFFDD00D796A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7A0FF101B8BFFDD00D796A5 /* PBXTargetDependency */,
+			);
+			name = "Rainbow Cat FlyerTests";
+			productName = "Rainbow Cat FlyerTests";
+			productReference = C7A0FF0E1B8BFFDD00D796A5 /* Rainbow Cat FlyerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7A0FEED1B8BFFDC00D796A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Devonyarbrough.com;
+				TargetAttributes = {
+					C7A0FEF41B8BFFDC00D796A5 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					C7A0FF0D1B8BFFDD00D796A5 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = C7A0FEF41B8BFFDC00D796A5;
+					};
+				};
+			};
+			buildConfigurationList = C7A0FEF01B8BFFDC00D796A5 /* Build configuration list for PBXProject "Rainbow Cat Flyer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7A0FEEC1B8BFFDC00D796A5;
+			productRefGroup = C7A0FEF61B8BFFDD00D796A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7A0FEF41B8BFFDC00D796A5 /* Rainbow Cat Flyer */,
+				C7A0FF0D1B8BFFDD00D796A5 /* Rainbow Cat FlyerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7A0FEF31B8BFFDC00D796A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A0FF091B8BFFDD00D796A5 /* LaunchScreen.xib in Resources */,
+				C7A0FF061B8BFFDD00D796A5 /* Images.xcassets in Resources */,
+				C7A0FEFD1B8BFFDD00D796A5 /* GameScene.sks in Resources */,
+				C7A0FF041B8BFFDD00D796A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A0FF0C1B8BFFDD00D796A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7A0FEF11B8BFFDC00D796A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A0FEFF1B8BFFDD00D796A5 /* GameScene.swift in Sources */,
+				C7A0FF011B8BFFDD00D796A5 /* GameViewController.swift in Sources */,
+				C7A0FEFB1B8BFFDD00D796A5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A0FF0A1B8BFFDD00D796A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A0FF151B8BFFDD00D796A5 /* Rainbow_Cat_FlyerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7A0FF101B8BFFDD00D796A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7A0FEF41B8BFFDC00D796A5 /* Rainbow Cat Flyer */;
+			targetProxy = C7A0FF0F1B8BFFDD00D796A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7A0FF021B8BFFDD00D796A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A0FF031B8BFFDD00D796A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7A0FF071B8BFFDD00D796A5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7A0FF081B8BFFDD00D796A5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7A0FF161B8BFFDD00D796A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7A0FF171B8BFFDD00D796A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7A0FF191B8BFFDD00D796A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Rainbow Cat Flyer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C7A0FF1A1B8BFFDD00D796A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Rainbow Cat Flyer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C7A0FF1C1B8BFFDD00D796A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Rainbow Cat FlyerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainbow Cat Flyer.app/Rainbow Cat Flyer";
+			};
+			name = Debug;
+		};
+		C7A0FF1D1B8BFFDD00D796A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Rainbow Cat FlyerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainbow Cat Flyer.app/Rainbow Cat Flyer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7A0FEF01B8BFFDC00D796A5 /* Build configuration list for PBXProject "Rainbow Cat Flyer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A0FF161B8BFFDD00D796A5 /* Debug */,
+				C7A0FF171B8BFFDD00D796A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7A0FF181B8BFFDD00D796A5 /* Build configuration list for PBXNativeTarget "Rainbow Cat Flyer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A0FF191B8BFFDD00D796A5 /* Debug */,
+				C7A0FF1A1B8BFFDD00D796A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7A0FF1B1B8BFFDD00D796A5 /* Build configuration list for PBXNativeTarget "Rainbow Cat FlyerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A0FF1C1B8BFFDD00D796A5 /* Debug */,
+				C7A0FF1D1B8BFFDD00D796A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7A0FEED1B8BFFDC00D796A5 /* Project object */;
+}
