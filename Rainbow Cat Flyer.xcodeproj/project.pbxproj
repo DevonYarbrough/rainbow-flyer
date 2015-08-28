@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5077701B90069000A66416 /* nyan.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B50776F1B90069000A66416 /* nyan.png */; };
 		C7A0FEFB1B8BFFDD00D796A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */; };
-		C7A0FEFD1B8BFFDD00D796A5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C7A0FEFC1B8BFFDD00D796A5 /* GameScene.sks */; };
 		C7A0FEFF1B8BFFDD00D796A5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */; };
 		C7A0FF011B8BFFDD00D796A5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */; };
 		C7A0FF041B8BFFDD00D796A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A0FF021B8BFFDD00D796A5 /* Main.storyboard */; };
@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B50776F1B90069000A66416 /* nyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nyan.png; path = ../../../Downloads/nyan.png; sourceTree = "<group>"; };
 		C7A0FEF51B8BFFDD00D796A5 /* Rainbow Cat Flyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rainbow Cat Flyer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A0FEF91B8BFFDD00D796A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7A0FEFC1B8BFFDD00D796A5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C7A0FF031B8BFFDD00D796A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,12 +82,12 @@
 			isa = PBXGroup;
 			children = (
 				C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */,
-				C7A0FEFC1B8BFFDD00D796A5 /* GameScene.sks */,
 				C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */,
 				C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */,
 				C7A0FF021B8BFFDD00D796A5 /* Main.storyboard */,
 				C7A0FF051B8BFFDD00D796A5 /* Images.xcassets */,
 				C7A0FF071B8BFFDD00D796A5 /* LaunchScreen.xib */,
+				0B50776F1B90069000A66416 /* nyan.png */,
 				C7A0FEF81B8BFFDD00D796A5 /* Supporting Files */,
 			);
 			path = "Rainbow Cat Flyer";
@@ -199,8 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7A0FF091B8BFFDD00D796A5 /* LaunchScreen.xib in Resources */,
+				0B5077701B90069000A66416 /* nyan.png in Resources */,
 				C7A0FF061B8BFFDD00D796A5 /* Images.xcassets in Resources */,
-				C7A0FEFD1B8BFFDD00D796A5 /* GameScene.sks in Resources */,
 				C7A0FF041B8BFFDD00D796A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,8 +351,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Rainbow Cat Flyer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -361,8 +363,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Rainbow Cat Flyer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -419,6 +423,7 @@
 				C7A0FF1A1B8BFFDD00D796A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7A0FF1B1B8BFFDD00D796A5 /* Build configuration list for PBXNativeTarget "Rainbow Cat FlyerTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				C7A0FF1D1B8BFFDD00D796A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
