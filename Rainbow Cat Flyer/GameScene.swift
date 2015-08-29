@@ -10,7 +10,7 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor(red: 0.4, green: 0.6, blue: 0.95, alpha: 1.0)
         let cat = SKSpriteNode(imageNamed: "nyan.png")
-        cat.size = CGSize(width: 170, height: 100)
+        cat.size = CGSize(width: 85, height: 50)
         cat.position = CGPoint(x: 250, y: 250)
         self.addChild(cat)
     }
