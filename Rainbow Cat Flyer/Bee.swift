@@ -9,21 +9,23 @@
 import SpriteKit
 
 //create the cat 
-class Cat: SKSpriteNode, GameSprite {
-    var textureAtlas:SKTextureAtlas = SKTextureAtlas(named: "catchar.atlas")
+class Bee: SKSpriteNode, GameSprite {
+    var textureAtlas:SKTextureAtlas = SKTextureAtlas(named: "enemies.atlas")
     var flyAnimation = SKAction()
     
-    //place cat into world 
-    func spawn(parentNode:SKNode, position:CGPoint, size: CGSize = CGSize(width: 60, height: 34)) {
+    //place bee into world
+    func spawn(parentNode:SKNode, position:CGPoint, size: CGSize = CGSize(width: 28, height: 24)) {
         parentNode.addChild(self)
         createAnimations()
         self.size = size
         self.position = position
         self.runAction(flyAnimation)
+        self.physicsBody = SKPhysicsBody(circleOfRadius: size.width/2)
+        self.physicsBody?.affectedByGravity = false
     }
     
     func createAnimations() {
-        let flyFrames:[SKTexture] = [textureAtlas.textureNamed("frame-1.png"), textureAtlas.textureNamed("frame-2.png")]
+        let flyFrames:[SKTexture] = [textureAtlas.textureNamed("bee.png"), textureAtlas.textureNamed("bee_fly.png")]
         let flyAction = SKAction.animateWithTextures(flyFrames, timePerFrame: 0.14)
         flyAnimation = SKAction.repeatActionForever(flyAction)
     }

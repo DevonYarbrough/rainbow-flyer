@@ -10,47 +10,33 @@ class GameScene: SKScene {
     
     //create the world
     let world = SKNode()
+    //create the ground
+    let ground = Ground()
     //create cat
-    let cat = SKSpriteNode()
+    let player = Player()
     
     override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor(red: 0.4, green: 0.6, blue: 0.95, alpha: 1.0)
         //add world node into scene
         self.addChild(world)
-        //call new cat function
-        self.addTheFlyingCat()
-        //create more Cats
-        let cat1 = Cat()
-        let cat2 = Cat()
-        let cat3 = Cat()
-        cat1.spawn(world, position: CGPoint(x: 325, y: 325))
-        cat2.spawn(world, position: CGPoint(x: 200, y: 325))
-        cat3.spawn(world, position: CGPoint(x: 50, y: 200))
-    }
-    
-    func addTheFlyingCat() {
-        //create our cat
-        cat.size = CGSize(width: 85, height: 50)
-        cat.position = CGPoint(x: 250, y: 250)
-        world.addChild(cat)
-        //add the texture
-        let catAtlas = SKTextureAtlas(named: "catchar.atlas")
-        let catFrames:[SKTexture] = [
-        catAtlas.textureNamed("frame-1.png"),
-        catAtlas.textureNamed("frame-2.png"),
-        catAtlas.textureNamed("frame-3.png"),
-        ]
-        //animate the frames
-        let flyAction = SKAction.animateWithTextures(catFrames, timePerFrame: 0.14)
-        let catAction = SKAction.repeatActionForever(flyAction)
-        //run repeat action
-        cat.runAction(catAction)
+        //create more bees
+        let bee1 = Bee()
+        let bee2 = Bee()
+        let bee3 = Bee()
+        bee1.spawn(world, position: CGPoint(x: 325, y: 325))
+        bee2.spawn(world, position: CGPoint(x: 200, y: 325))
+        bee3.spawn(world, position: CGPoint(x: 50, y: 200))
+        //spawn the ground
+        let groundPosition = CGPoint(x: -self.size.width, y: 100)
+        let groundSize = CGSize(width: self.size.width * 3, height: 0)
+        ground.spawn(world, position: groundPosition, size: groundSize)
+        player.spawn(world, position: CGPoint(x: 150, y: 250))
     }
     
     override func didSimulatePhysics() {
         //center the cat
-        let worldXPos = -(cat.position.x * world.xScale - (self.size.width / 2))
-        let worldYPos = -(cat.position.y * world.yScale - (self.size.height / 2))
+        let worldXPos = -(player.position.x * world.xScale - (self.size.width / 2))
+        let worldYPos = -(player.position.y * world.yScale - (self.size.height / 2))
         world.position = CGPoint(x: worldXPos, y: worldYPos)
     }
 }

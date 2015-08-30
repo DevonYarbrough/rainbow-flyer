@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0B8E33AB1B923CBE00BEF23A /* GameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E33AA1B923CBE00BEF23A /* GameSprite.swift */; };
-		0B8E33AD1B923EC400BEF23A /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E33AC1B923EC400BEF23A /* Cat.swift */; };
+		0B8E33AD1B923EC400BEF23A /* Bee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E33AC1B923EC400BEF23A /* Bee.swift */; };
 		0B8E33AF1B9297A900BEF23A /* catchar.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E33AE1B9297A900BEF23A /* catchar.atlas */; };
+		0B8E33B11B937FDC00BEF23A /* ground.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E33B01B937FDC00BEF23A /* ground.atlas */; };
+		0B8E33B31B937FFD00BEF23A /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E33B21B937FFD00BEF23A /* Ground.swift */; };
+		0B8E33B51B93A73C00BEF23A /* enemies.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E33B41B93A73C00BEF23A /* enemies.atlas */; };
+		0B8E33B71B93A82000BEF23A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E33B61B93A82000BEF23A /* Player.swift */; };
 		C7A0FEFB1B8BFFDD00D796A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */; };
 		C7A0FEFF1B8BFFDD00D796A5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */; };
 		C7A0FF011B8BFFDD00D796A5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */; };
@@ -31,8 +35,12 @@
 
 /* Begin PBXFileReference section */
 		0B8E33AA1B923CBE00BEF23A /* GameSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSprite.swift; sourceTree = "<group>"; };
-		0B8E33AC1B923EC400BEF23A /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		0B8E33AC1B923EC400BEF23A /* Bee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bee.swift; sourceTree = "<group>"; };
 		0B8E33AE1B9297A900BEF23A /* catchar.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = catchar.atlas; sourceTree = "<group>"; };
+		0B8E33B01B937FDC00BEF23A /* ground.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ground.atlas; sourceTree = "<group>"; };
+		0B8E33B21B937FFD00BEF23A /* Ground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
+		0B8E33B41B93A73C00BEF23A /* enemies.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = enemies.atlas; sourceTree = "<group>"; };
+		0B8E33B61B93A82000BEF23A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C7A0FEF51B8BFFDD00D796A5 /* Rainbow Cat Flyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rainbow Cat Flyer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A0FEF91B8BFFDD00D796A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,12 +93,16 @@
 		C7A0FEF71B8BFFDD00D796A5 /* Rainbow Cat Flyer */ = {
 			isa = PBXGroup;
 			children = (
+				0B8E33B41B93A73C00BEF23A /* enemies.atlas */,
+				0B8E33B01B937FDC00BEF23A /* ground.atlas */,
 				0B8E33AE1B9297A900BEF23A /* catchar.atlas */,
 				C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */,
 				C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */,
 				0B8E33AA1B923CBE00BEF23A /* GameSprite.swift */,
 				C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */,
-				0B8E33AC1B923EC400BEF23A /* Cat.swift */,
+				0B8E33B61B93A82000BEF23A /* Player.swift */,
+				0B8E33AC1B923EC400BEF23A /* Bee.swift */,
+				0B8E33B21B937FFD00BEF23A /* Ground.swift */,
 				C7A0FF021B8BFFDD00D796A5 /* Main.storyboard */,
 				C7A0FF051B8BFFDD00D796A5 /* Images.xcassets */,
 				C7A0FF071B8BFFDD00D796A5 /* LaunchScreen.xib */,
@@ -204,10 +216,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8E33B51B93A73C00BEF23A /* enemies.atlas in Resources */,
 				C7A0FF091B8BFFDD00D796A5 /* LaunchScreen.xib in Resources */,
 				C7A0FF061B8BFFDD00D796A5 /* Images.xcassets in Resources */,
 				0B8E33AF1B9297A900BEF23A /* catchar.atlas in Resources */,
 				C7A0FF041B8BFFDD00D796A5 /* Main.storyboard in Resources */,
+				0B8E33B11B937FDC00BEF23A /* ground.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B8E33AD1B923EC400BEF23A /* Cat.swift in Sources */,
+				0B8E33B31B937FFD00BEF23A /* Ground.swift in Sources */,
+				0B8E33AD1B923EC400BEF23A /* Bee.swift in Sources */,
 				0B8E33AB1B923CBE00BEF23A /* GameSprite.swift in Sources */,
 				C7A0FEFF1B8BFFDD00D796A5 /* GameScene.swift in Sources */,
+				0B8E33B71B93A82000BEF23A /* Player.swift in Sources */,
 				C7A0FF011B8BFFDD00D796A5 /* GameViewController.swift in Sources */,
 				C7A0FEFB1B8BFFDD00D796A5 /* AppDelegate.swift in Sources */,
 			);
