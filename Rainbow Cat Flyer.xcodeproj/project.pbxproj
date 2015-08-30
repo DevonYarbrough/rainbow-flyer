@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B5077701B90069000A66416 /* nyan.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B50776F1B90069000A66416 /* nyan.png */; };
+		0B8E33AB1B923CBE00BEF23A /* GameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E33AA1B923CBE00BEF23A /* GameSprite.swift */; };
+		0B8E33AD1B923EC400BEF23A /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E33AC1B923EC400BEF23A /* Cat.swift */; };
+		0B8E33AF1B9297A900BEF23A /* catchar.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E33AE1B9297A900BEF23A /* catchar.atlas */; };
 		C7A0FEFB1B8BFFDD00D796A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */; };
 		C7A0FEFF1B8BFFDD00D796A5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */; };
 		C7A0FF011B8BFFDD00D796A5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */; };
@@ -28,7 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B50776F1B90069000A66416 /* nyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nyan.png; path = ../../../Downloads/nyan.png; sourceTree = "<group>"; };
+		0B8E33AA1B923CBE00BEF23A /* GameSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSprite.swift; sourceTree = "<group>"; };
+		0B8E33AC1B923EC400BEF23A /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		0B8E33AE1B9297A900BEF23A /* catchar.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = catchar.atlas; sourceTree = "<group>"; };
 		C7A0FEF51B8BFFDD00D796A5 /* Rainbow Cat Flyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rainbow Cat Flyer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A0FEF91B8BFFDD00D796A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,13 +85,15 @@
 		C7A0FEF71B8BFFDD00D796A5 /* Rainbow Cat Flyer */ = {
 			isa = PBXGroup;
 			children = (
+				0B8E33AE1B9297A900BEF23A /* catchar.atlas */,
 				C7A0FEFA1B8BFFDD00D796A5 /* AppDelegate.swift */,
 				C7A0FEFE1B8BFFDD00D796A5 /* GameScene.swift */,
+				0B8E33AA1B923CBE00BEF23A /* GameSprite.swift */,
 				C7A0FF001B8BFFDD00D796A5 /* GameViewController.swift */,
+				0B8E33AC1B923EC400BEF23A /* Cat.swift */,
 				C7A0FF021B8BFFDD00D796A5 /* Main.storyboard */,
 				C7A0FF051B8BFFDD00D796A5 /* Images.xcassets */,
 				C7A0FF071B8BFFDD00D796A5 /* LaunchScreen.xib */,
-				0B50776F1B90069000A66416 /* nyan.png */,
 				C7A0FEF81B8BFFDD00D796A5 /* Supporting Files */,
 			);
 			path = "Rainbow Cat Flyer";
@@ -199,8 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7A0FF091B8BFFDD00D796A5 /* LaunchScreen.xib in Resources */,
-				0B5077701B90069000A66416 /* nyan.png in Resources */,
 				C7A0FF061B8BFFDD00D796A5 /* Images.xcassets in Resources */,
+				0B8E33AF1B9297A900BEF23A /* catchar.atlas in Resources */,
 				C7A0FF041B8BFFDD00D796A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8E33AD1B923EC400BEF23A /* Cat.swift in Sources */,
+				0B8E33AB1B923CBE00BEF23A /* GameSprite.swift in Sources */,
 				C7A0FEFF1B8BFFDD00D796A5 /* GameScene.swift in Sources */,
 				C7A0FF011B8BFFDD00D796A5 /* GameViewController.swift in Sources */,
 				C7A0FEFB1B8BFFDD00D796A5 /* AppDelegate.swift in Sources */,
