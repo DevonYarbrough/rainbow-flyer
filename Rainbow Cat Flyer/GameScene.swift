@@ -31,6 +31,8 @@ class GameScene: SKScene {
         let groundSize = CGSize(width: self.size.width * 3, height: 0)
         ground.spawn(world, position: groundPosition, size: groundSize)
         player.spawn(world, position: CGPoint(x: 150, y: 250))
+        bee1.physicsBody?.mass = 0.2
+        bee1.physicsBody?.applyImpulse(CGVector(dx: -15, dy: 0))
     }
     
     override func didSimulatePhysics() {
