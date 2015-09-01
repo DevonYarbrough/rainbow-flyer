@@ -27,12 +27,10 @@ class GameScene: SKScene {
         bee2.spawn(world, position: CGPoint(x: 200, y: 325))
         bee3.spawn(world, position: CGPoint(x: 50, y: 200))
         //spawn the ground
-        let groundPosition = CGPoint(x: -self.size.width, y: 100)
+        let groundPosition = CGPoint(x: -self.size.width, y: 30)
         let groundSize = CGSize(width: self.size.width * 3, height: 0)
         ground.spawn(world, position: groundPosition, size: groundSize)
         player.spawn(world, position: CGPoint(x: 150, y: 250))
-        bee1.physicsBody?.mass = 0.2
-        bee1.physicsBody?.applyImpulse(CGVector(dx: -15, dy: 0))
     }
     
     override func didSimulatePhysics() {
@@ -41,4 +39,9 @@ class GameScene: SKScene {
         let worldYPos = -(player.position.y * world.yScale - (self.size.height / 2))
         world.position = CGPoint(x: worldXPos, y: worldYPos)
     }
+    
+    override func update(currentTime: NSTimeInterval) {
+        player.update()
+    }
+    
 }

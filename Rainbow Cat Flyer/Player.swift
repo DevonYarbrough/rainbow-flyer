@@ -20,6 +20,15 @@ class Player : SKSpriteNode, GameSprite {
         self.size = size
         self.position = position
         self.runAction(flyAnimation, withKey: "flapAnimation")
+        let bodyTexture = textureAtlas.textureNamed("frame-1.png")
+        self.physicsBody = SKPhysicsBody(
+            texture: bodyTexture,
+            size: size)
+        //lose momentum
+        self.physicsBody?.linearDamping = 0.9
+        self.physicsBody?.mass = 30
+        //stop rotation
+        self.physicsBody?.allowsRotation = false
     }
     
     func createAnimations() {
@@ -51,5 +60,8 @@ class Player : SKSpriteNode, GameSprite {
         rotateDownAction
         ])
     }
+    
+    func update() { }
+    
     func onTap() {}
 }
