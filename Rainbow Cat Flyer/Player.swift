@@ -13,13 +13,18 @@ class Player : SKSpriteNode, GameSprite {
     //animation for up and down
     var flyAnimation = SKAction()
     var soarAnimation = SKAction()
+    var flapping = false
+    
+    let maxFlappingForce:CGFloat = 57000
+    //slow down cat if he's too high
+    let maxHeight:CGFloat = 1000
     
     func spawn(parentNode: SKNode, position: CGPoint, size:CGSize = CGSize(width:70, height:45)) {
         parentNode.addChild(self)
         createAnimations()
         self.size = size
         self.position = position
-        self.runAction(flyAnimation, withKey: "flapAnimation")
+        self.runAction(soarAnimation, withKey: "soarAnimation")
         let bodyTexture = textureAtlas.textureNamed("frame-1.png")
         self.physicsBody = SKPhysicsBody(
             texture: bodyTexture,
@@ -61,7 +66,37 @@ class Player : SKSpriteNode, GameSprite {
         ])
     }
     
-    func update() { }
+    //begin animation
+    func startFlapping() {
+        self.removeActionForKey("soarAnimation")
+        self.runAction(flyAnimation, withKey: "flapAnimation")
+        self.flapping = true
+    }
+    
+    //stop animation
+    func stopFlapping() {
+        self.removeActionForKey("flapAnimation")
+        self.runAction(soarAnimation, withKey: "soarAnimation")
+        self.flapping = false
+    }
+    
+    func update() {
+        if self.flapping {
+            var forceToApply = maxFlappingForce
+            if position.y > 600 {
+                let percentageOfMaxHeight = position.y / maxHeight
+                let flappingForceSubtraction = percentageOfMaxHeight * maxFlappingForce
+                    forceToApply -= flappingForceSubtraction
+            }
+            //apply force
+            self.physicsBody?.applyForce(CGVector(dx: 0, dy: forceToApply))
+        }
+        //limit top speed
+        if self.physicsBody?.velocity.dy > 300 {
+            self.physicsBody?.velocity.dy  = 300
+        }
+    }
+
     
     func onTap() {}
 }
