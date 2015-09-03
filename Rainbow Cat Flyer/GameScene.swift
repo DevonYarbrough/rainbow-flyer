@@ -14,6 +14,11 @@ class GameScene: SKScene {
     let ground = Ground()
     //create cat
     let player = Player()
+    var screenCenterY = CGFloat()
+    
+    //keep track of progress
+    let initialPlayerStart = CGPoint(x: 150, y: 250)
+    var catProgress = CGFloat()
     
     override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor(red: 0.0, green: 0.3, blue: 0.56, alpha: 1.0)
@@ -30,16 +35,35 @@ class GameScene: SKScene {
         let groundPosition = CGPoint(x: -self.size.width, y: 30)
         let groundSize = CGSize(width: self.size.width * 3, height: 0)
         ground.spawn(world, position: groundPosition, size: groundSize)
-        player.spawn(world, position: CGPoint(x: 150, y: 250))
+        player.spawn(world, position: initialPlayerStart)
         // Set gravity
         self.physicsWorld.gravity = CGVector(dx: 0, dy: -5)
+        //Find vertical center de la screen
+        screenCenterY = self.size.height / 2
     }
     
     override func didSimulatePhysics() {
-        //center the cat
-        let worldXPos = -(player.position.x * world.xScale - (self.size.width / 2))
-        let worldYPos = -(player.position.y * world.yScale - (self.size.height / 2))
-        world.position = CGPoint(x: worldXPos, y: worldYPos)
+        var worldYPos:CGFloat = 0
+        //Zoom as cat flies up
+        if (player.position.y > screenCenterY) {
+            let percentOfMaxHeight = (player.position.y - screenCenterY) / (player.maxHeight - screenCenterY)
+            let scaleSubtraction = (percentOfMaxHeight > 1 ? 1:percentOfMaxHeight) * 0.6
+            let newScale = 1 - scaleSubtraction
+            world.yScale = newScale
+            world.xScale = newScale
+            //adjust world
+            worldYPos = -(player.position.y * world.yScale - (self.size.height) / 2)
+        }
+        
+        //keep track of distance flown
+        catProgress = player.position.x - initialPlayerStart.x
+        
+        let worldXPos = -(player.position.x * world.xScale - (self.size.width) / 3)
+        //move world
+        world.position = CGPoint(x: worldXPos, y:worldYPos)
+        
+        //See if ground should move
+        ground.checkForReposition(catProgress)
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
